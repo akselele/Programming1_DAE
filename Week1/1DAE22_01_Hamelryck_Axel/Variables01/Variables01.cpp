@@ -22,7 +22,7 @@ int main()
 	isBool = false;
 	fFloat = 11.0f;
 	dDouble = 11.0f;
-	std::cout << std::endl;
+	std::cout << std::endl;	
 	std::cout << "new int = (" << number << ")" << std::endl;
 	std::cout << "new character = (" << character << ")" << std::endl;
 	std::cout << "new boolean = (" << isBool << ")" << std::endl;
