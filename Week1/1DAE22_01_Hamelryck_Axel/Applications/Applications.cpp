@@ -16,6 +16,7 @@ void AreaTriangle();
 int main()
 {
     AreaTriangle();
+    std::cin.get();
 }
 
 void RgbaToFloat()
