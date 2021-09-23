@@ -13,7 +13,7 @@ float g_WindowHeight{ 300 };
 
 #pragma region ownDeclarations
 // Declare your own global variables here
-
+Point2f g_MousePos{ 0.0f, 0.0f };
 // Declare your own functions here
 
 #pragma endregion ownDeclarations

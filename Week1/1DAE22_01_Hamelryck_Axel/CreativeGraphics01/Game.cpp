@@ -12,13 +12,15 @@ void Start()
 void Draw()
 {
 	ClearBackground();
-	SetColor(199 / 255.0f, 21 / 255.0f, 133 / 255.0f);
+	/*SetColor(199 / 255.0f, 21 / 255.0f, 133 / 255.0f);
 	DrawEllipse(g_WindowWidth / 2, g_WindowHeight / 2, g_WindowHeight / 2, g_WindowHeight / 2);
 	SetColor(0, 0, 1);
 	FillEllipse(g_WindowWidth / 3, g_WindowHeight / 1.5f, g_WindowHeight / 60, g_WindowHeight / 60);
 	FillEllipse(g_WindowWidth / 1.5f, g_WindowHeight / 1.5f, g_WindowHeight / 150, g_WindowHeight / 150);
 	SetColor(199 / 255.0f, 21 / 255.0f, 133 / 255.0f);
-	DrawLine(g_WindowWidth / 3, g_WindowHeight - (g_WindowHeight / 1.65f), g_WindowWidth / 1.5f, g_WindowHeight - (g_WindowHeight / 1.65f));
+	DrawLine(g_WindowWidth / 3, g_WindowHeight - (g_WindowHeight / 1.65f), g_WindowWidth / 1.5f, g_WindowHeight - (g_WindowHeight / 1.65f));*/
+	SetColor(1, 0, 0);
+	FillEllipse(g_MousePos, 3, 3);
 	//165, 182
 	//333, 182
 }
@@ -72,6 +74,9 @@ void OnKeyUpEvent(SDL_Keycode key)
 void OnMouseMotionEvent(const SDL_MouseMotionEvent& e)
 {
 	std::cout << e.x << " - " << e.y << std::endl;
+	//Point2f mousePos{ float(e.x), float(g_WindowHeight - e.y) };
+	Point2f mousePos{ float(e.x), float(g_WindowHeight - e.y) };
+	g_MousePos = mousePos;
 }
 
 void OnMouseDownEvent(const SDL_MouseButtonEvent& e)
