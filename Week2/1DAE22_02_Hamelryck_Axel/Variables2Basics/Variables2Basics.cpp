@@ -29,14 +29,14 @@ int main()
 	//IsEven(7);
 	//IsEven(10);
 	//IsEven(85);
-	//srand(int(time(nullptr)));
+	srand(int(time(nullptr)));
 	//RandomNumberInt(0, 50);
 
-	//RandomNumberInt(10, 80);
-	//RandomNumberInt(-20, 20);
-	//RandomNumberInt(-2, 2);
-	//RandomNumberFloat(5.00f, 10.00f);
-	//RandomNumberFloat(-5.00f, 5.00f);
+	/*RandomNumberInt(10, 80);
+	RandomNumberInt(-20, 20);
+	RandomNumberInt(-2, 2);*/
+	RandomNumberFloat(5.00f, 10.00f);
+	RandomNumberFloat(-5.00f, 5.00f);
 
 	////LetterToAsciiValue();
 
@@ -58,7 +58,7 @@ int main()
 
 	// Wait
 	std::cout << "Push ENTER to quit\n";
-	std::cin.get();
+	//std::cin.get();
 	std::cin.get();
 
 	return 0;
@@ -81,7 +81,9 @@ void RandomNumberFloat(float min, float max)
 {
 	//float result{ max + (rand() / (RAND_MAX / (min - max))) };
 	//float result{ float(rand() % int(((max - min) + 1) + min)) };
-	float result{ float(rand() % ((int(max) - int(min)) + 1) + int(min)) };
+	float difference{ (max - min) * 100 };
+	float result{ float(rand() % (int(difference) + 1) + int(min * 100))/100.0f  };
+
 
 	std::cout << "Random number between " << min << " and " << max << ": " << result << std::endl;
 }
