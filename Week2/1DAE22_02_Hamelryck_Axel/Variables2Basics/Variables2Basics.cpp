@@ -25,40 +25,40 @@ int main()
 	std::cout << "Name of my high school: Atheneum Vilvoorde & ColomaPLUS " << std::endl;
 	std::cout << "In the last year I had 4 hours math a week" << std::endl << std::endl;
 
-	//// Exercises
-	//IsEven(7);
-	//IsEven(10);
-	//IsEven(85);
+	// Exercises
+	IsEven(7);
+	IsEven(10);
+	IsEven(85);
 	srand(int(time(nullptr)));
-	//RandomNumberInt(0, 50);
+	RandomNumberInt(0, 50);
 
-	/*RandomNumberInt(10, 80);
+	RandomNumberInt(10, 80);
 	RandomNumberInt(-20, 20);
-	RandomNumberInt(-2, 2);*/
+	RandomNumberInt(-2, 2);
 	RandomNumberFloat(5.00f, 10.00f);
 	RandomNumberFloat(-5.00f, 5.00f);
 
-	////LetterToAsciiValue();
+	LetterToAsciiValue();
 
-	//RandomLetterToAsciiValue();
+	RandomLetterToAsciiValue();
 
-	//RoundFloats();
+	RoundFloats();
 
-	//AspectRatio();
+	AspectRatio();
 
-	//PrefixPostfix();
+	PrefixPostfix();
 
-	//ExploreString();
+	ExploreString();
 
-	//StringConcatenation();
+	StringConcatenation();
 
-	//ConvertingNumbersToString();
+	ConvertingNumbersToString();
 
 	ConvertingStringsToNumbers();
 
 	// Wait
 	std::cout << "Push ENTER to quit\n";
-	//std::cin.get();
+	std::cin.get();
 	std::cin.get();
 
 	return 0;
