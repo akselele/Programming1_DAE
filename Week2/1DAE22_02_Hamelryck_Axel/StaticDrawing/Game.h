@@ -5,8 +5,8 @@ using namespace utils;
 std::string g_WindowTitle{ "StaticDrawing - Hamelryck, Axel - 1DAE22" };
 
 // Change the window dimensions here
-float g_WindowWidth{ 500 };
-float g_WindowHeight{ 300 };
+float g_WindowWidth{ 1000 };
+float g_WindowHeight{ 600 };
 #pragma endregion gameInformation
 
 
@@ -16,12 +16,12 @@ float g_WindowHeight{ 300 };
 
 // Declare your own functions here
 
-void DrawHouse();
-void DrawFlag();
-void DrawCheckerPattern();
-void DrawColorBand();
-void DrawPentagram();
-void DrawColumnChart();
+void DrawHouse(float coordx, float coordy, float width = g_WindowWidth / 2.5f, float height = g_WindowHeight / 5.5f);
+void DrawFlag(float coordx, float coordy, float width = g_WindowWidth / 3.0f, float height = g_WindowHeight / 3.0f);
+void DrawCheckerPattern(float coordx, float coordy, float size = g_WindowWidth / 3.0f);
+void DrawColorBand(float coordx, float coordy, float width = g_WindowWidth / 2.5f);
+void DrawPentagram(float centerx, float centery, float radius = 80.0f);
+void DrawColumnChart(float coordx, float coordy, float width = g_WindowWidth / 2.5f, float height = 100.0f);
 #pragma endregion ownDeclarations
 
 #pragma region gameFunctions											
