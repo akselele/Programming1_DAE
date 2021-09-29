@@ -5,8 +5,8 @@ using namespace utils;
 std::string g_WindowTitle{ "Beam - Hamelryck, Axel - 1DAE22" };
 
 // Change the window dimensions here
-float g_WindowWidth{ 420 };
-float g_WindowHeight{ 420 };
+float g_WindowWidth{ 550 };
+float g_WindowHeight{ 450 };
 #pragma endregion gameInformation
 
 

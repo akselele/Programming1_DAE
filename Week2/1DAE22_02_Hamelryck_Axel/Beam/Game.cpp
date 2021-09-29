@@ -10,7 +10,7 @@ void Start()
 
 void Draw()
 {
-	ClearBackground(0,0,0);
+	ClearBackground(0, 0, 0);
 
 	// Put your own draw statements here
 	DrawBeam();
@@ -100,15 +100,15 @@ void DrawBeam()
 {
 	float squareSize{ 200.0f };
 	float border{ 10.0f };
-	SetColor(0, 128.0f/255, 0);
+	SetColor(0, 128.0f / 255, 0);
 	FillRect(border, border, squareSize, squareSize);
-	FillRect(border + squareSize, border + squareSize, squareSize, squareSize);
+	FillRect(g_WindowWidth - border - squareSize, g_WindowHeight - border - squareSize, squareSize, squareSize);
 	SetColor(1, 1, 1);
 	DrawRect(border, border, squareSize, squareSize);
-	DrawRect(border + squareSize, border + squareSize, squareSize, squareSize);
-	DrawLine(border, border, g_WindowHeight - 10, g_WindowWidth - 10);
-	DrawLine(border, border + 200, g_WindowHeight - 210, g_WindowWidth - 10);
-	DrawLine(border + 200, border, g_WindowHeight - 10, g_WindowWidth - 210);
+	DrawRect(g_WindowWidth - border - squareSize, g_WindowHeight - border - squareSize, squareSize, squareSize);
+	DrawLine(border, border, g_WindowWidth - border, g_WindowHeight - border);
+	DrawLine(border, border + squareSize, g_WindowWidth - squareSize - border, g_WindowHeight - border);
+	DrawLine(border + squareSize, border, g_WindowWidth - border, g_WindowHeight - squareSize - border);
 
 }
 #pragma endregion ownDefinitions
