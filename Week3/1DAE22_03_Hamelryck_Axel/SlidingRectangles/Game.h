@@ -5,8 +5,8 @@ using namespace utils;
 std::string g_WindowTitle{ "SlidingRectangles - Hamelryck, Axel - 1DAE22" };
 
 // Change the window dimensions here
-float g_WindowWidth{ 500 };
-float g_WindowHeight{ 500 };
+float g_WindowWidth{ 800 };
+float g_WindowHeight{ 800 };
 #pragma endregion gameInformation
 
 
@@ -14,9 +14,12 @@ float g_WindowHeight{ 500 };
 #pragma region ownDeclarations
 // Declare your own global variables here
 const float g_MaxWidth{ g_WindowWidth / 5 };
+// Mirroring horizontally
 Point2f g_GreenRect{ (g_WindowWidth / 2) - g_MaxWidth/2 + g_MaxWidth, (g_WindowHeight / 2) - g_MaxWidth/2 };
 Point2f g_BlueRect{ (g_WindowWidth / 2) - g_MaxWidth / 2, (g_WindowHeight / 2) - g_MaxWidth / 2 };
+// Mirroring horizontally and vertically
 Point2f g_RedRect{ (g_WindowWidth / 2) - g_MaxWidth / 2 + g_MaxWidth, (g_WindowHeight / 2) - g_MaxWidth / 2 + g_MaxWidth };
+// Mirroring vertically
 Point2f g_YellowRect{ (g_WindowWidth / 2) - g_MaxWidth / 2, (g_WindowHeight / 2) - g_MaxWidth / 2 + g_MaxWidth};
 // Declare your own functions here
 void DrawGreenRect();
